@@ -14,13 +14,44 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
 body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 1200px;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
     color: #000000;
     background-color: #ffffff;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    list-style-type: none;
+}
+
+.navigation-user {
+    max-width: 250px;
+    margin-left: auto;
+    list-style-type: none;
 }
 
 .navigation-link {
@@ -73,7 +104,12 @@ body {
     text-align: center;
 }
 
+.advantages-container {
+    display: flex;
+}
+
 .advantages-wrapper {
+    width: 400px;
     font-size: 18px;
     line-height: 21px;
     color: #ffffff;
@@ -100,9 +136,18 @@ body {
 }
 
 .advantages-list {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    list-style-type: none;
+}
+
+.advantages-item {
+    width: 400px;
 }
 
 .advantages-list .advantages-title {
@@ -160,10 +205,25 @@ body {
     line-height: 26px;
 }
 
+.socials {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.footer-social {
+    max-width: 110px;
+}
+
 .contacts-phone {
     font-size: 40px;
     text-decoration: none;
     color: #000000;
+}
+
+.footer-email{
+    margin-left: auto;
+    width: 115px;
 }
 
 .catalog-filter-block {
@@ -178,6 +238,11 @@ body {
     font-size: 16px;
 }
 
+.breadcrumbs-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .catalog-filter {
     font-size: 20px;
     font-weight: 700;
@@ -188,6 +253,7 @@ body {
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
+    color: #ffffff;
 }
 
 .from-to {
@@ -238,8 +304,6 @@ body {
 
 .hotel-card-button {
     font-size: 16px;
-    font-weight: 700;
-    color: #ffffff;
     background-color: #756257;
     text-decoration: none;
 }
@@ -292,14 +356,9 @@ body {
 }
 
 .pagination-current {
-    font-size: 20px;
-    line-height: 26px;
     font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
     color: #000000;
     background-color: #F2F2F2;
-    text-decoration: none;
 }
 
 .hotels-per-page {
@@ -326,7 +385,7 @@ body {
 
 .email {
     font-size: 20px;
-    line-height: 36px;
+    line-height: 26px;
     font-weight: 700;
     background-color: #83B3D3;
     text-decoration: none;
@@ -334,6 +393,7 @@ body {
 
 .button {
     font-family: "PT Sans", sans-serif; 
+    font-weight: 700;
     text-align: center;
     color: #ffffff;
     border: none;
