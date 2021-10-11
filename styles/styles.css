@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -44,13 +50,12 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
-    width: 400px;
     list-style-type: none;
+    width: 309px;
 }
 
 .navigation-user {
-    max-width: 250px;
-    margin-left: auto;
+    width: 250px;
     list-style-type: none;
 }
 
@@ -139,7 +144,6 @@ body {
     margin: 0 auto;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -178,8 +182,6 @@ body {
 .search-button {
     font-size: 20px;
     line-height: 36px;
-    font-weight: 700;
-    color: white;
     background-color: #756257;
     text-decoration: none;
 }
@@ -208,11 +210,19 @@ body {
 .socials {
     display: flex;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .footer-social {
     max-width: 110px;
+}
+
+.footer-social-list {
+    list-style-type: none;
+}
+
+.footer-social-list .button {
+    color: #000000;
 }
 
 .contacts-phone {
@@ -222,7 +232,6 @@ body {
 }
 
 .footer-email{
-    margin-left: auto;
     width: 115px;
 }
 
@@ -275,7 +284,7 @@ body {
     font-size: 18px;
     line-height: 23px;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     border: none;
     text-align: center;
 }
@@ -408,5 +417,8 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
   }
 */
