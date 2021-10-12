@@ -245,6 +245,7 @@ body {
 
 .breadcrumbs {
     font-size: 16px;
+    list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -256,6 +257,10 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
+}
+
+.catalog-filter-list {
+    list-style-type: none;
 }
 
 .control-label {
@@ -294,6 +299,12 @@ body {
     line-height: 39px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.hotel-list {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
 }
 
 .hotel-card-link {
@@ -351,6 +362,12 @@ body {
     text-transform: uppercase;
     background-color: #83B3D3;
     text-decoration: none;
+}
+
+.pagination {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .pagination-link {
