@@ -302,7 +302,7 @@ li.navigation-item:last-child {
 .subscription-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 26px;
+  margin: 0 0 45px;
 }
 
 .subscription-form {
@@ -385,10 +385,7 @@ li.navigation-item:last-child {
   font-weight: 700;
   line-height: 26px;
   display: grid;
-  grid-template-columns: 150px 150px 290px 160px;
-  gap: 67px;
-  justify-content: space-between;
-  align-items: end;
+  grid-template-columns: 150px 67px 140px 167px 290px 81px 160px;
 }
 
 
@@ -396,6 +393,19 @@ li.navigation-item:last-child {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.convenience-container {
+  grid-column: 1  / 2;
+}
+
+.housing-container {
+  grid-column: 3 / 4;
+}
+
+.button-container {
+  grid-column: 7 / 8;
+  align-self: end;
 }
 
 .catalog-filter-title {
@@ -420,6 +430,7 @@ li.navigation-item:last-child {
 .price-container {
   display: grid;
   grid-template-columns: 145px 145px;
+  grid-column: 5 / 6;
 }
 
 .catalog-filter-input-min {
@@ -427,7 +438,7 @@ li.navigation-item:last-child {
   border-radius: 4px 0 0 4px;
   background-color: transparent;
   width: 144px;
-  padding: 12px;
+  padding: 10px;
   text-align: right;
   font-size: 18px;
   line-height: 23px;
@@ -438,7 +449,7 @@ li.navigation-item:last-child {
   border-radius: 0 4px 4px 0;
   background-color: transparent;
   width: 144px;
-  padding: 12px;
+  padding: 10px;
   text-align: right;
   font-size: 18px;
   line-height: 23px;
@@ -454,8 +465,13 @@ li.navigation-item:last-child {
 .from-to {
   font-size: 18px;
   line-height: 23px;
-  text-align: right;
   font-weight: 400;
+}
+
+.range-toggle {
+  width: 20px;
+  border-radius: 4px;
+  border: none;
 }
 
 .button-submit {

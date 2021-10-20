@@ -54,7 +54,7 @@
         </div>
         <h2 class="visually-hidden">Фильтр по поиску Гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group convenience-container">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -80,7 +80,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group housing-container">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -106,9 +106,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group price-container">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <div class="price-container">
               <label class="catalog-filter-label">
                 <input class="catalog-filter-input-min" type="number" name="min-price"/>
                 <span class="from-to">от</span>
@@ -123,7 +122,6 @@
               <button class="range-toggle toggle-max" type="button">
                 <span class="visually-hidden">Изменить максимальную цену.</span>
               </button>
-            </div>
           </fieldset>
           <div class="button-container">
             <button class="button button-submit" type="submit">Применить</button>
