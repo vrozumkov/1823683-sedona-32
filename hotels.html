@@ -55,7 +55,10 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+              <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/>
+              </svg>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -154,24 +157,26 @@
               Отсортировать Гостиницы
             </button>
           </form>
-          <a href="#" class="button">
-            <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
-            </svg>
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a href="#" class="button">
-            <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
-            </svg>
-            <span class="visually-hidden">Показать слайдшоу</span>
-          </a>
-          <a href="#" class="button button-active">
-            <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
-            </svg>
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <div class="hotels-preview">
+            <a href="#" class="button-preview">
+              <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
+              </svg>
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a href="#" class="button-preview">
+              <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
+              </svg>
+              <span class="visually-hidden">Показать слайдшоу</span>
+            </a>
+            <a href="#" class="button-preview button-active">
+              <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
+              </svg>
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
         </div>
         <div class="hotels">
           <ul class="hotel-list">
