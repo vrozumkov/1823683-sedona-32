@@ -40,6 +40,46 @@
                 Избраное
               </span>
             </a>
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <h2 class="popover-title visually-hidden">Избранные</h2>
+                <ul class="favorites-items-list">
+                  <li class="favorites-item">
+                    <a class="favorites-info" href="#">
+                      <img src="images/hotel-desert-small.jpg" alt="Desert Quail Inn" width="48" height="48">
+                      <div class="favorites-description">
+                        <p class="favorites-item-title">Desert Quail Inn</p>
+                        <p class="favorites-item-housing">Мотель</p>
+                      </div>
+                    </a>
+                    <button class="favorites-item-button button" type="button">
+                      <svg class="delete-icon" width="16" height="16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></g>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="favorites-item">
+                    <a class="favorites-info" href="#">
+                      <img src="images/hotel-villas-small.jpg" alt="Desert Quail Inn" width="48" height="48">
+                      <div class="favorites-description">
+                        <p class="favorites-item-title">Villas at Poco Diablo</p>
+                        <p class="favorites-item-housing">Апартаменты</p>
+                      </div>
+                    </a>
+                    <button class="favorites-item-button button" type="button">
+                      <svg class="delete-icon" width="16" height="16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></g>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <a class="button favorites-link" href="#">
+                  <span class="favorites-link-title">Все избранные</span>
+                </a>
+              </div>
+            </div>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-link-visible" href="#">Хочу сюда!</a>
@@ -169,5 +209,83 @@
         </div>
       </section>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <div class="modal-header">
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          </section>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group-date">
+            <p class="booking-form-date">
+              <span class="form-label">
+                <label for="booking-date">
+                  Дата заезда:
+                </label>
+              </span>
+              <input class="booking-date-input" type="text" id="booking-date" name="booking-date" placeholder="27 апреля 2020">
+            </p>
+          </div>
+          <div class="field-group-date">
+            <p class="booking-form-date">
+              <span class="form-label">
+                <label for="booking-date">
+                  Дата выезда:
+                </label>
+              </span>
+              <input class="booking-date-input" type="text" id="booking-date" name="booking-date" placeholder="1 сентября 2021">
+            </p>
+          </div>
+          <div class="field-group-people">
+            <p class="booking-form-people">
+              <span class="form-label">
+                <label for="booking-people">
+                  Взрослые:
+                </label>
+              </span>
+              <div class="people-value">
+                <button class="booking-load-less">
+                  <span class="visually-hidden">Загрузить меньше</span>
+                </button>
+                <input class="booking-people-input" type="number" id="booking-people" name="booking-people" value="2">
+                <button class="booking-load-more">
+                  <span class="visually-hidden">Загрузить больше</span>
+                </button>
+              </div>
+            </p>
+          </div>
+          <div class="field-group-children">
+            <p class="booking-form-people">
+              <span class="form-label">
+                <label for="booking-people">
+                  Дети:
+                </label>
+              </span>
+              <button class="button-info" type="button">
+                <span class="visually-hidden">
+                  Посмотреть дополнительную информацию
+                </span>
+              </button>
+              <div class="people-value">
+                <button class="booking-load-less">
+                  <span class="visually-hidden">Загрузить меньше</span>
+                </button>
+                <input class="booking-people-input" type="number" id="booking-children" name="booking-children" value="1">
+                <button class="booking-load-more">
+                  <span class="visually-hidden">Загрузить больше</span>
+                </button>
+              </div>
+            </p>
+          </div>
+          <button class="button booking-search-button" type="submit">
+            Найти
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
