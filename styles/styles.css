@@ -1278,7 +1278,7 @@ input[type=number]::-webkit-outer-spin-button {
 .popover {
   position: absolute;
   top: 50px;
-  right: -175px;
+  right: -170px;
   width: 400px;
   padding-top: 25px;
   max-height: 232px;
@@ -1289,7 +1289,17 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   z-index: 1;
-  display: none;
+}
+
+.popover::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/triangle.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 8px;
+  left: 200px;
+  top: -8px;
 }
 
 .popover-open {
