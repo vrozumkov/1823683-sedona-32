@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -224,6 +225,7 @@
               </label>
               <input class="booking-date-input" type="text" id="booking-date-arrival" name="booking-date-arrival" placeholder="27 апреля 2020">
             </p>
+            <div class="arrival-warning">Мы не можем отправить вас в прошлое.</div>
             <button class="calendar-button" type="button">
               <span class="visually-hidden">календарь</span>
             </button>
@@ -235,12 +237,13 @@
               </label>
               <input class="booking-date-input" type="text" id="booking-date-departure" name="booking-date-departure" placeholder="1 сентября 2021">
             </p>
+            <div class="departure-warning">На эти даты есть свободные номера. Пока есть.</div>
             <button class="calendar-button" type="button">
               <span class="visually-hidden">календарь</span>
             </button>
           </div>
           <div class="field-group-people">
-            <p class="booking-form-people">
+            <div class="booking-form-people">
               <label for="booking-people">
                 Взрослые:
               </label>
@@ -253,10 +256,10 @@
                   <span class="visually-hidden">Загрузить больше</span>
                 </button>
               </div>
-            </p>
+            </div>
           </div>
           <div class="field-group-children">
-            <p class="booking-form-people">
+            <div class="booking-form-people">
               <label for="booking-children">
                   Дети:
               </label>
@@ -280,7 +283,7 @@
                   <span class="visually-hidden">Загрузить больше</span>
                 </button>
               </div>
-            </p>
+            </div>
           </div>
           <button class="button booking-search-button" type="submit">
             Найти

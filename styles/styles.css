@@ -38,6 +38,11 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -1313,8 +1318,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .popover {
   position: absolute;
-  top: 50px;
-  right: -170px;
+  top: 47px;
+  right: -178px;
   width: 400px;
   max-height: 232px;
   font-family: "PT Sans", sans-serif;
@@ -1334,7 +1339,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-repeat: no-repeat;
   width: 20px;
   height: 8px;
-  left: 200px;
+  left: 190px;
   top: -7px;
 }
 
@@ -1424,9 +1429,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .favorites-item-housing {
   margin: 0;
+  letter-spacing: -1px;
 }
 
 .favorites-item-button {
+  display: flex;
+  justify-content: center;
   padding: 0;
   width: 36px;
   height: 36px;
@@ -1472,7 +1480,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: auto;
   padding: 62px 70px 70px;
   background-color: #ffffff;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 .modal-auth {
@@ -1535,7 +1543,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .field-group-people {
   grid-column: 1 / 2;
   display: flex;
-  margin: 0 0 40px;
+  margin: 0 0 41px;
   justify-content: space-between;
 }
 
@@ -1609,7 +1617,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .booking-people-input {
-  width: 133px;
+  width: 135px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -1644,12 +1652,16 @@ input[type="number"]::-webkit-outer-spin-button {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #83b3d3;
-  margin-left: 9px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
 .button-info:hover + .popover-info {
   display: block;
+}
+
+.button-info:hover {
+  background-color: #68a2ca;
 }
 
 .booking-search-button {
@@ -1707,7 +1719,7 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 13px;
   background-color: #000000;
   content: "";
-  top: 5px;
+  top: 6px;
   transform: rotate(90deg);
   opacity: 0.3;
 }
@@ -1730,7 +1742,7 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 13px;
   background-color: #000000;
   content: "";
-  top: 5px;
+  top: 6px;
   opacity: 0.3;
 }
 
@@ -1741,10 +1753,10 @@ input[type="number"]::-webkit-outer-spin-button {
 .popover-info {
   display: none;
   position: absolute;
-  top: 385px;
-  right: 106px;
+  top: 395px;
+  right: 107px;
   width: 256px;
-  max-height: 143px;
+  height: 143px;
   font-family: "PT Sans", sans-serif;
   color: #ffffff;
   background-color: #000000;
@@ -1771,7 +1783,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 400;
   align-items: center;
   margin: 0;
-  padding: 15px 18px 18px 22px;
+  padding: 18px 18px 18px 22px;
 }
 
 .favorites-counter {
@@ -1791,4 +1803,24 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #7db54f;
   top: 0;
   right: 0;
+}
+
+.arrival-warning {
+  position: absolute;
+  top: 45px;
+  right: 140px;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #ff5757;
+}
+
+.departure-warning {
+  position: absolute;
+  top: 45px;
+  right: 90px;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #333333;
 }
