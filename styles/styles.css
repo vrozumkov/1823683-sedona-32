@@ -446,6 +446,10 @@ li.navigation-item:last-child {
 }
 
 .input-email:invalid {
+  box-shadow: none;
+}
+
+.input-email:focus:invalid {
   box-shadow: 0 0 0 3px #ff5757;
 }
 
